@@ -6,10 +6,11 @@
 }
 .product-name{
     color: blue;
+    font-weight: normal;
 }
 .btn-regular{
     background-color: goldenrod;
-    width: 150px;
+    width:200px;
     height: 25px;
     border: 1px solid gray;
     border-radius: 5px;

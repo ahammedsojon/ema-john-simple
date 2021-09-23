@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Product.css';
 const Product = (props) => {
-    // console.log(props.product);
     const { img, name, price, seller, stock } = props.product;
     return (
         <div className="product">
@@ -11,7 +10,7 @@ const Product = (props) => {
                 <img src={img} alt="" />
             </div>
             <div>
-                <h4 className="product-name">{name}</h4>
+                <h3 className="product-name">{name}</h3>
                 <p><small>by: {seller}</small></p>
                 <p>${price}</p>
                 <p><small>only {stock} left in stock - order soon</small></p>

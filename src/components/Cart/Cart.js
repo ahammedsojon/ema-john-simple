@@ -21,10 +21,10 @@ const Cart = (props) => {
                 <h3>Item Orderd: {cart.length}</h3>
             </div>
             <div>
-                <h3>Total : {total.toFixed(2)}</h3>
-                <h3>Shipping: {shipping}</h3>
-                <h3>Tax: {tax.toFixed(2)}</h3>
-                <h2>Grand Total: {grandTotal.toFixed(2)}</h2>
+                <h3>Total : ${total.toFixed(2)}</h3>
+                <h3>Shipping: ${shipping}</h3>
+                <h3>Tax: ${tax.toFixed(2)}</h3>
+                <h2>Grand Total: ${grandTotal.toFixed(2)}</h2>
             </div>
 
         </div>
