@@ -8,6 +8,9 @@
     color: blue;
     font-weight: normal;
 }
+.icon-color{
+    color: goldenrod;
+}
 .btn-regular{
     background-color: goldenrod;
     width:200px;
@@ -15,4 +18,5 @@
     border: 1px solid gray;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 5px;
 }
