@@ -11,9 +11,11 @@ const Header = () => {
             <nav>
                 <NavLink to="/shop">Shop</NavLink>
                 <NavLink to="/review">Order Review</NavLink>
-                <NavLink to="/inventory">Manage Inventry here</NavLink>
+                <NavLink to="/inventory">Manage Inventory here</NavLink>
                 {
-                    user.email && <span style={{ color: 'red' }}>Hello, {user.displayName} </span>
+                    user.email && <>
+                        <NavLink to="/orders">Orders</NavLink>
+                        <span style={{ color: 'red' }}>Hello, {user.displayName} </span></>
                 }
                 {user.email ? <button onClick={logOut}>Log out</button> :
                     <NavLink to="/login">Login</NavLink>

@@ -6,6 +6,7 @@ import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import OrderReview from './components/OrderReview/OrderReview';
+import Orders from './components/Orders/Orders';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
@@ -35,6 +36,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute exact path="/shipping">
             <Shipping></Shipping>
+          </PrivateRoute>
+          <PrivateRoute exact path="/orders">
+            <Orders></Orders>
           </PrivateRoute>
           <Route exact path="/login">
             <Login></Login>

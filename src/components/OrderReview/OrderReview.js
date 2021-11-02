@@ -8,17 +8,12 @@ import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
 
 const OrderReview = () => {
-    const [products] = useProducts();
-    const [cart, setCart] = useCart(products);
+    const [cart, setCart] = useCart();
     const history = useHistory();
     const handleRemove = key => {
         const stroedCart = cart.filter(product => product.key !== key);
         setCart(stroedCart);
         deleteFromDb(key);
-    }
-    const handleProceedToShipping = () => {
-        setCart([]);
-        clearTheCart();
     }
     return (
         <div className="shop-container">
@@ -31,7 +26,6 @@ const OrderReview = () => {
             <div className="cart-container">
                 <Cart cart={cart}>
                     <NavLink
-                        onClick={handleProceedToShipping}
                         to="/shipping"><button className="btn-regular">Proceed to shipping</button></NavLink>
                 </Cart>
             </div>

@@ -16,3 +16,14 @@
     margin-left: 20%;
     border-right: 1px solid lightgray;
 }
+.pagination{
+    margin: 30px 0;
+}
+.pagination button{
+    padding: 0 10px;
+    margin: 0 5px;
+}
+.pagination .selected{
+    background-color: cornflowerblue;
+    color: white;
+}
