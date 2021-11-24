@@ -12,7 +12,7 @@ const Shipping = () => {
         const savedCart = getStoredCart();
         data.order = savedCart;
         console.log(savedCart)
-        fetch('http://localhost:5000/order', {
+        fetch('https://agile-wildwood-87849.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
